@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Open Weather</string>
+    <string name="retry"><u>Retry</u></string>
+    <string name="error_msg">Ups…  something went wrong. Check your internet connection. You must allow application to use your location.</string>
+    <string name="error_wrong_name">Could not find location with this name please try to use another</string>
+    <string name="feels_like">Feels like&#160;</string>
+    <string name="temp_sign">°</string>
+    <string name="percent_sign">%</string>
+    <string name="wind_speed">Wind speed:&#160;</string>
+    <string name="clouds">Clouds:&#160;</string>
+    <string name="humidity">Humidity:&#160;</string>
+    <string name="pressure">Pressure</string>
+    <string name="uvi">UVI</string>
+    <string name="find_by_map">Find by map</string>
+    <string name="find_by_text">Find by text</string>
+    <string name="options">Options</string>
+    <string name="find_location_hint">Address/City</string>
+    <string name="location_name_hint">Name for your location</string>
+    <string name="details">Details</string>
+    <string name="delete">Delete</string>
+    <string name="delete_success">Successfully deleted</string>
+    <string name="temperature">Temperature&#160;</string>
+    <string name="day">Day</string>
+    <string name="night">Night</string>
+    <string name="morning">Morning</string>
+    <string name="eve">Eve</string>
+</resources>
