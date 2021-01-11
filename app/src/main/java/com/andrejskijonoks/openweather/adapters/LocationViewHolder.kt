@@ -53,6 +53,10 @@ class LocationViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
                         snackbar.animationMode = BaseTransientBottomBar.ANIMATION_MODE_SLIDE
                         snackbar.show()
                         val a = activity as LocationListActivity
+
+                        if(LocationListActivity.currentLocationName!!.equals(owLocation.name)){
+                            a.locationWasDeleted = true
+                        }
                         a.getLocations()
                     }
                     true

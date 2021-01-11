@@ -144,7 +144,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             btnLocationList.setOnClickListener {
-                startActivity((Intent(this@MainActivity,LocationListActivity::class.java)))
+                startActivity((LocationListActivity.newIntent(this@MainActivity, locationName!!)))
                 CoroutineScope(IO).cancel()
             }
 
