@@ -21,7 +21,7 @@ class LocationListActivity : AppCompatActivity() {
 
         var currentLocationName : String? = null
 
-        fun newIntent(context: Context, currentLocayionName : String): Intent{
+        fun newIntent(context: Context, currentLocationName : String): Intent{
             this.currentLocationName = currentLocationName
             return Intent(context, LocationListActivity::class.java)
         }
@@ -64,10 +64,9 @@ class LocationListActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         if(locationWasDeleted){
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(MainActivity.newIntent(this@LocationListActivity,null,null))
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
-            finish()
         } else {
             super.onBackPressed()
         }
